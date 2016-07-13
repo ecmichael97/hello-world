@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<title>D Dog and the Pups</title>
+</head>
+<body background="memepic.png">
+<video name="fire" autoplay="" height="0" loop="" width="0"><source src="video" type="video/mp4" /></video>
+<h1>D Dog n the Pups</h1>
+<img id="rotater" align="left">
+<img id="rotator" align="right">
+
+
+
+
+
+
+
+
+
+
+<center>
+<font id="time" style="color:#DAF7A6;" size="20">   
+
+</font></center>
+<script>
+var count = 1;
+document.getElementById("time").innerHTML = "memes";
+	var myVar = setInterval(function(){  
+			var d = new Date("July 23, 2016 00:00:00");
+	var x = new Date();
+	var l = x.getHours();
+	var y = d.getTime() - x.getTime();
+	var g = new Date(y);
+	var m = (d.getUTCDate() - x.getUTCDate())*24;
+	document.getElementById("time").innerHTML = (m-l) + ":" + g.getMinutes() + ":" + g.getSeconds();
+			count = count + 1;
+			var sr = "stephen%s.png"
+			sr = sr.replace('%s', count);
+		document.getElementById("rotater").src = sr;
+	        document.getElementById("rotator").src = sr;
+		if (count == 4){
+			count = 0;
+		}
+		
+		
+	}, 1000);
+</script>
+
+
+</body>
+</html>
